@@ -1,1 +1,36 @@
-//in users
+//in users, user has many roles
+{
+	"first_name": "Bob",
+	"last_name": "Marley",
+	"roles": [
+		{
+		"team member", "manager", "team lead"
+		}
+	]
+}
+
+//in users, user has one birthday
+{
+	"name": "Jake Johnson",
+	"birthday": "5/28/1978"
+}
+
+//in users, user can have many dependents
+{
+	"first_name": "Charles",
+	"last_name": "Xavier"
+	"dependents": [
+		{
+			"name": "Scott Summers",
+			"power": "Optic Blasts"
+		},
+		{
+			"name": "Rober Drake"
+			"power": "Cryokinesis"
+		},
+		{
+			"name": "Jean Grey"
+			"power": "Telekinesis"
+		}
+		]
+}
