@@ -1,6 +1,6 @@
 {
-	"customer_id: 100,
-	"first_name: 'Spike',
+	"customer_id": 100,
+	"first_name": 'Spike',
 	"last_name": 'Spiegel',
 	"date_of_birth": '06-26-2044',
 	"user_name": 'SwordfishII',

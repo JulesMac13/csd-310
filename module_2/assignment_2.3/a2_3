@@ -1,0 +1,48 @@
+//In student
+{
+	"student_id": 100,
+	"first_name": "Zidane",
+	"last_name": "Tribal",
+	"enrollment": [
+		{
+			"term": "Winter",
+			"gpa": 3.2,
+			"start_date": "08-31-22",
+			"end_data": "11-20-22"
+			"course": [
+				{
+					"course_id": 1,
+					"description": "learn how to steal",
+					"instructor": "Blank",
+					"grade": "B"
+				},
+				{
+					"course_id": 2,
+					"description": "pretending to be a theater troupe",
+					"instructor": "Baku",
+					"grade": "C"
+				}
+			]
+		},
+		{
+			"term": "Spring",
+			"gpa": 3.4,
+			"start_date": "01-10-23",
+			"end_data": "05-08-23"
+			"course": [
+				{
+					"course_id": 3,
+					"description": "charmin' the ladies",
+					"instructor": "Blank",
+					"grade": "C"
+				},
+				{
+					"course_id": 4,
+					"description": "bein' a good person",
+					"instructor": "Baku",
+					"grade": "A"
+				}
+			]
+		}
+	]
+}
