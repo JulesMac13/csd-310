@@ -1,0 +1,26 @@
+//In USER
+{
+    "user_ID": 001
+"first_name": "Ben"
+"last_name": "Kenobi"
+"roles": [
+
+    {
+        "role_id": 002
+        "title": "Master"
+        "department": "Jedi"
+        "permissions": [
+
+            {
+                "permissions_id": 001
+                "read": Y
+                "write": Y
+            }
+
+            {
+                 "permissions_id": 034
+                "read": Y
+                "write": N
+            }]
+    }]
+}
