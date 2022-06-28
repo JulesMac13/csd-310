@@ -1,0 +1,26 @@
+{
+    "publisher_code": 3qf23
+    "publisher_name": "Amazon"
+    "publisher_address": "The intarwebs"
+    "books": [
+        {
+            "book_isbn": "979-8623938008"
+            "book_name": "Key Element"
+            "book_price": $13.99
+            "book_author": [
+                {
+                    "book_isbn": "979-8623938008"
+                    "author_email": "keyelementbook@"
+                }
+            ]
+        }
+    ]
+    "author": [
+        {
+            "author_email": "keyelementbook@"
+            "author_first_name": "Lisha"
+            "author_last_name": "Mac"
+            "author_phone": 1234567890
+        }
+    ]
+}

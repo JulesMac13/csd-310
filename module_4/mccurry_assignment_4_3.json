@@ -1,0 +1,47 @@
+{
+	"student_id": 158,
+	"first_name": "Malcom",
+	"last_name": "Hawke",
+	"enrollment": [
+		{
+			"term": "Fall",
+			"gpa": 3.9,
+			"start_date": "08-31-22",
+			"end_data": "11-20-22"
+			"course": [
+				{
+					"course_id": 42,
+					"description": "Fire Spells",
+					"instructor": "Irving",
+					"grade": "A"
+				},
+				{
+					"course_id": 85,
+					"description": "Entropy",
+					"instructor": "Morrigan",
+					"grade": "A-"
+				}
+			]
+		},
+		{
+			"term": "Spring",
+			"gpa": 3.7,
+			"start_date": "01-10-23",
+			"end_data": "05-08-23"
+			"course": [
+				{
+					"course_id": 93,
+					"description": "Martial Arts- Bo staff",
+					"instructor": "Zevran",
+					"grade": "B+"
+				},
+				{
+					"course_id": 105,
+					"description": "Arcane Warrior",
+					"instructor": "Entombed Spirit",
+					"grade": "A"
+				}
+			]
+		}
+	]
+}
