@@ -38,10 +38,14 @@ for record in records:
 
 #drop method
 
+collection.delete_one({"Student_ID" : "1010"})
 
+#showing students with Groot deleted
 
-# print("DISPLAYING STUDENT DOCUMENTS FROM find() QUERY")
+records = collection.find({})
 
-# for record in records:
+print("DISPLAYING STUDENT DOCUMENTS FROM find() QUERY")
 
-#     pprint(record)
+for record in records:
+
+    pprint(record)
