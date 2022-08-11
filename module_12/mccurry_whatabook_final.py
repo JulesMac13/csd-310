@@ -25,8 +25,8 @@ def show_menu():
     print("\n  -- Main Menu --")
 
     print("""    
-        1. View Books\n    
-        2. View Store Locations\n    
+        1. View Store Locations\n   
+        2. View Books\n    
         3. My Account\n    
         4. Exit Program""")
 
