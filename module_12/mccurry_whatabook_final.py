@@ -28,7 +28,7 @@ def show_menu():
         1. View Store Locations\n   
         2. View Books\n    
         3. My Account\n    
-        4. Exit Program""")
+        4. Exit Program\n""")
 
     try:
         choice = int(input('Enter an option: '))
@@ -50,6 +50,8 @@ def show_locations(_cursor):
     #results
     print("\n  -- DISPLAYING STORE LOCATIONS --")
 
+    print() #extra space between lines
+
     for location in locations:
         print("  Locale: {}\n".format(location[1]))
 
@@ -62,10 +64,13 @@ def show_books(_cursor):
     books = _cursor.fetchall()
 
     #display results
-    print("\n  -- DISPLAYING BOOK LISTING --")
+    print("\n  -- DISPLAYING BOOK LISTINGS --")
+
+    print() #extra space between lines
 
     for book in books:
-        print("""Book Name: {}\n  
+        print("""
+        Book ID: {}\n  
         Author: {}\n  
         Details: {}\n""".format(book[0], book[1], book[2]))
 
@@ -74,7 +79,7 @@ def validate_user():
     #Validate the users ID
 
     try:
-        user_id = int(input('\n Enter User ID: '))
+        user_id = int(input('\n       Enter User ID: '))
 
         if user_id < 0 or user_id > 3:
             print("\n  That was an incorrect User ID...\n")
@@ -91,16 +96,18 @@ def show_account_menu():
     # display the users account menu
 
     try:
-        print("-- CUstomer Menu --")
-        print("""1. View Wishlist \n 
+        print()
+        print("   -- Customer Menu --")
+        print("""
+        1. View Wishlist \n 
         2. Add Book to Wishlist \n 
-        3. Return to the Main Menu""")
+        3. Return to the Main Menu \n""")
 
-        account_option = int(input('Choose an option:'))
+        account_option = int(input('Choose an option: '))
         return account_option
 
     except ValueError:
-        print("Invalid option")
+        print("Invalid option.")
         sys.exit(0)
 
 
@@ -118,7 +125,8 @@ def show_wishlist(_cursor, _user_id):
     print("\n   -- DISPLAYING WISHLIST ITEMS --")
 
     for book in wishlist:
-        print("""Book Name: {}\n 
+        print("""
+        Book Name: {}\n 
         Author: {}\n""".format(book[4], book[5]))
 
 
@@ -138,7 +146,8 @@ def show_books_to_add(_cursor, _user_id):
     print("\n    -- DISPLAYING AVAILABLE BOOKS --")
 
     for book in books_to_add:
-        print("""Book Id: {}\n 
+        print("""
+        Book Id: {}\n 
         Book Name: {}\n""".format(book[0], book[1]))
 
 
@@ -222,7 +231,7 @@ try:
         # show the main menu
         user_selection = show_menu()
 
-    print("\n  THat was not an option...")
+    print("\n  Application terminated.")
 
 
 except mysql.connector.Error as err:
